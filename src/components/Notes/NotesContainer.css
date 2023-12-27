@@ -1,0 +1,140 @@
+.notesContainer {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  padding: 3%;
+}
+
+.notesPreview {
+  width: 25%;
+  max-height: 630px;
+  margin: 2%;
+  height: 100%;
+  padding: 2px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.noteActive {
+  width: 50%;
+  margin: 2%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: inset -6px -4px 2px rgba(196, 111, 111, 0.03);
+  border-radius: 15px;
+  border: 1.5px solid rgba(255, 255, 255, 0.326);
+}
+
+.noteActive > h1 {
+  text-align: center;
+}
+
+.noteActive > p {
+  padding: 2%;
+}
+
+.previewNote {
+  flex: 0 1 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  border: 1.5px solid rgba(255, 255, 255, 0.326);
+  margin-top: 1%;
+  padding: 5%;
+  overflow: hidden;
+  min-height: 120px;
+}
+
+.active {
+  border: 3px solid white !important;
+}
+
+.previewNote > h1 {
+  font-size: 24px;
+  margin-top: -5%;
+}
+
+.sideMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  height: 100%;
+}
+
+.noteMenu {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: space-around;
+}
+
+.noteMenu > button {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  border: 1.5px solid rgba(255, 255, 255, 0.326);
+  width: 100%;
+}
+
+.noteMenu.show > button {
+  color: black;
+} 
+
+.noteMenu.hide > button {
+  color: gray;
+}
+
+.camView {
+  width: 100%;
+  /* width: fit-content;
+  height: fit-content; */
+  /* align-content: center; */
+}
+
+.camCommand {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  border: 1.5px solid rgba(255, 255, 255, 0.326);
+  width: 100%;
+  min-height: 30%;
+}
+
+
+
+.canvas {
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+
+.output_canvas {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.popup {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: inset -6px -4px 2px rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  border: 1.5px solid rgba(255, 255, 255, 0.326);
+  margin-top: 1%;
+  padding: 5%;
+  overflow: hidden;
+  min-height: 120px;
+}
+
+.popup-content {
+  color: #edc90c;
+}
